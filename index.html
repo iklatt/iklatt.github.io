@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Isaiah Klatt's Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <style>
+      body {
+          overflow-x: hidden;
+          margin: 0px;
+          font-family: monospace;
+          color: white;
+      }
+
+      canvas {
+          position: fixed;
+          top: 0;
+          left: 0;
+      }
+
+      main {
+          width: 100vw;
+          height: 200vw;
+          z-index: 99;
+          position: absolute;
+          justify-content: center;
+          text-align: center;
+          pointer-events: none;
+          font-size: 5vh;
+      }
+
+      section {
+          min-height: 100vh;
+          padding: 20px;
+          font-size: 4vh;
+      }
+
+      #scrollProgress {
+          position: fixed;
+          bottom: 10px;
+          left: 10px;
+          z-index: 99;
+          font-size: 3vh;
+      }
+  </style>
+  <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+                "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Isaiah Klatt's Portfolio Website</h1>
+      <section>
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum.
+          </p>
+      </section>
+
+      <section>
+          <h2>Resume</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum.
+          </p>
+      </section>
+
+      <section>
+          <h2>My Projects</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum.
+          </p>
+      </section>
+    </main>
+    <canvas id = "bg"></canvas>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
